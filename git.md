@@ -39,5 +39,25 @@ Git 远程仓库相当的操作实际可以归纳为两点：向远程仓库传�
 -  `git pull`: 
 - `git push`: 
 
+## github使用过程
+
+github联系本地文件时，url需要加上token，token保存在本地文件中。
+
+1. 报错：push过程出现：[rejected] master -> master (fetch first)(non-fast forward)
+
+   解决：原因是没有同步远程的master，所以我们需要先同步一下。
+
+   ```
+     git pull origin master
+   ```
+
+   也可以git push -f origin master强制提交。
+
+2.  报错：git commit 过程中Changes not staged for commit:
+
+   需要先git add 后在commit 然后 push
+
+3. 
+
 
 
